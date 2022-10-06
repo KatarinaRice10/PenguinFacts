@@ -5,7 +5,14 @@ pAppearance = ["a", "The king penguin stands at 70 to 100 cm (28 to 39 in) tall 
 pConservationStatus = ["a", "70% of king penguins are expected to abruptly disappear in less than eighty years.", "In 2012 the emperor penguin was uplisted from a species of least concern to near threatened by the IUCN. Along with nine other species of penguin, it is currently under consideration for inclusion under the US Endangered Species Act.", "In 2018, the IUCN estimated that the population of chinstrap penguins was around 8 million specimens. Although it is believed to be decreasing overall, its population is not severely fragmented and in many sites it is increasing or stable.", "As of 2019, the IUCN Red List lists the gentoo as least concern with a stable population trend, although rapid declines in some key areas are believed to be driving a moderate overall decline in the species population.", "Eudyptula species are classified as 'at risk - declining' under Wildlife Act 1953.", "The African penguin is one of the species to which the African-Eurasian Waterbird Agreement (AEWA) applies. In September 2010, it was listed as endangered under the US Endangered Species Act.", "The southern rockhopper penguin group is classified as vulnerable by the IUCN. Its population has declined by about one-third in the last thirty years.", "The population of macaroni penguins is estimated at around 18 million mature individuals; a substantial decline has been recorded in several locations. This includes a 50% reduction in the South Georgia population between the mid-1970s to mid-1990s, and the disappearance of the species from Isla Recalada in Southern Chile. This decline of the overall population in the last 30 years has resulted in the classification of the species as globally Vulnerable by the IUCN Red List of Threatened Species."]
 choice = input("What penguin do you want to learn about?\n1. King\n2. Emperor\n3. Chinstrap\n4. Gentoo\n5. Little\n6. African\n7. Southern Rockhopper\n8. Macaroni\n")
 print(pSpeicies[int(choice)])
-print(pHabitat[int(choice)])
-print(pDiet[int(choice)])
-print(pAppearance[int(choice)])
-print(pConservationStatus[int(choice)])
+p = input("What do you want to learn about that penguin species?\n1. Habitat\n2. Diet\n3. Appearance\n4. Conservation Status\n")
+if p == "1":
+    print(pHabitat[int(choice)])
+elif p == "2":
+    print(pDiet[int(choice)])
+elif p == "3":
+    print(pAppearance[int(choice)])
+elif p == "4":
+    print(pConservationStatus[int(choice)])
+else:
+    print("Thats not an option.")
